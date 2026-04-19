@@ -96,7 +96,7 @@ model/
 ```
 
 2. Download the dataset from Google Drive
-   (you will add your link later)
+   (you will add your link later](https://drive.google.com/file/d/1uGYeOHNzWrdjNnfxs8NkOMGHGxNhn7sG/view?usp=drive_link)
 
 3. Place the downloaded file:
 
