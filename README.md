@@ -69,7 +69,7 @@ Tomato-disease-detection/
 ### 1️⃣ Clone Repository
 
 ```bash id="2b6k6m"
-git clone https://github.com/yourusername/Tomato-disease-detection.git
+git clone https://github.com/yourusername/Tomato-Disease-Detection.git
 cd Tomato-disease-detection
 ```
 
