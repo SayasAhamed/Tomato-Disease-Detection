@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1><b>Prediction Result</b></h1>
+
+    <h2>{{ prediction }}</h2>
+    <h3>Confidence: {{ confidence }}%</h3>
+
+    <!-- SHOW MODEL -->
+    <p><b>Model Used:</b> {{ model_used }}</p>
+
+    <img src="{{ url_for('uploaded_file', filename=image) }}" width="300"><br><br>
+
+    <p>{{ info }}</p>
+
+    <a href="/">▶ Try another image</a>
+</div>
+
+</body>
+</html>
