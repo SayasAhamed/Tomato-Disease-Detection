@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tomato Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🍅 Tomato Disease Detection</h1>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+
+        <input type="file" name="file" onchange="previewImage(event)" required><br><br>
+
+        <!-- ▶ MODEL SELECTOR -->
+        <select name="model">
+            <option value="resnet">ResNet50 (High Accuracy)</option>
+            <option value="mobilenet">MobileNetV2 (Fast)</option>
+        </select><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <img id="preview" width="250"/>
+</div>
+
+<script>
+function previewImage(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+        document.getElementById('preview').src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+}
+</script>
+
+</body>
+</html>
